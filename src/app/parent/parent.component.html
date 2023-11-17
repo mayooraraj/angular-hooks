@@ -1,0 +1,10 @@
+<h1>parent component </h1>
+<button (click)="buttonClick()"> Submit</button>
+<app-child *ngIf="isChild"></app-child>  <!-- child disply only when ischild is true -->
+<h1>input from parent= {{data}}</h1>
+
+<div class="child">
+    <button (click)="increaseCounter()">Click here {{childCounter}}</button>
+    <ng-content></ng-content>
+</div>
+
